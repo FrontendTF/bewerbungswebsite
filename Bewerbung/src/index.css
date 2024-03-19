@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ###  Pageheader  ### */
+.H2 {
+  @apply sm:text-4xl font-bold text-3xl;
+}
+.menu-link {
+  @apply text-white bg-gray-800 text-2xl sm:text-3xl lg:text-4xl p-5 border-2 border-white;
+}
+.menu-link:hover {
+  @apply transition-all bg-white text-black border-2 border-black font-semibold;
+}
+.link {
+  @apply text-lg font-bold lg:text-2xl p-1 lg:p-2 border-t-2 border-x-2 border-white;
+}
+.link:hover {
+  @apply text-violet-700 duration-700 rounded-t-lg;
+}
+.underline {
+  @apply absolute left-0 w-full h-[4px] bottom-[-2px] bg-gradient-to-b from-violet-700 to-slate-50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500;
+}
+
+/* ### Homepage ### */
+.bg-homebg {
+  background-image: url("../src/assets/bg-home.avif");
+}
+.H1 {
+  @apply text-5xl sm:text-6xl font-bold text-center px-5;
+}
+
+/*buttonstyle*/
+.grey-button {
+  @apply bg-violet-700 py-4 px-20 rounded-lg text-white md:text-gray-300 font-bold  sm:text-2xl shadow-xl transform duration-500 text-center;
+}
+.grey-button:hover {
+  @apply -translate-y-2 transform duration-500 shadow-2xl text-white;
+}
+/*About Me*/
+.H3 {
+  @apply text-2xl font-bold;
+}
+.skillstyle {
+  @apply py-3 px-5 bg-slate-300 text-center rounded-lg text-gray-700 font-bold;
+}
+/*footer*/
+
+.iconhover {
+  @apply ring-2 ring-violet-700 ring-opacity-90 opacity-40 duration-300 rounded-sm;
+}
+.iconhover:hover {
+  @apply ring-4 opacity-100 duration-700 ring-opacity-100;
+}
+.iconspan:hover {
+  @apply flex duration-700;
+}
+/*scroll smooth*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*guthublogo*/
+.github:hover {
+  @apply flex;
+}
